@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Gentium+Book+Plus&family=Lato&display=swap');
+:root {
+    --clr-background: #e8ffe8;
+    --clr-box: #fdfdfd;
+    --clr-box-shadow: #ff1f5a;
+    --clr-font: #40514e;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: 'Gentium Book Plus', serif;
+    background: var(--clr-background);
+}
+
