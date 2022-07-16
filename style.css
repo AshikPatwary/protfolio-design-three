@@ -1,9 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Gentium+Book+Plus&family=Lato&display=swap');
 :root {
     --clr-background: #e8ffe8;
-    --clr-box: #fdfdfd;
-    --clr-box-shadow: #ff1f5a;
+    --clr-common: #fdfdfd;
+    --clr-box-shadow: #00fff0;
     --clr-font: #40514e;
+    --clr-nav-bar: #1e6262;
 }
 *{
     padding: 0;
@@ -15,6 +16,72 @@ html{
 }
 body{
     font-family: 'Gentium Book Plus', serif;
-    background: var(--clr-background);
+    background: var(--clr-common);
 }
-
+nav{
+    position: fixed;
+    display: flex;
+    top: 0;
+    left: 0;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    height: 55px;
+    background: var(--clr-nav-bar);
+}
+nav .container{
+    display: flex;
+    gap: 50px;
+    margin-right: 80px;
+}
+nav .container a{
+    list-style: none;
+}
+.container li{
+    list-style: none;
+    display: inline-block;
+}
+.container li a{
+    text-decoration: none;
+    font-size: 20px;
+    border: 1px solid transparent;
+    padding: 7px 10px;
+    color: var(--clr-common);
+}
+.container li a:hover{
+    border: 1px solid #ff304f;
+}
+nav>img{
+    width: 50px;
+    margin-left: 30px;
+}
+header{
+    background-image: url(images/cover-photo-three.webp);
+    height: 80vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.div-parent-one{
+    position: absolute;
+    margin-top: 510px;
+    text-align: center;
+    align-items: center;
+    line-height: 45px;
+    left: 25%;
+    color: var(--clr-font);
+}
+.div-parent-one h1{
+    font-size: 3em;
+    font-weight: bold;
+}
+.div-parent-one a{
+    text-decoration: none;
+    padding: 7px 10px;
+    background: #ff304f;
+    color: var(--clr-common);
+    font-weight: bold;
+    border-radius: 6px;
+}
+.section-one{
+    margin-top: 250px;
+}
