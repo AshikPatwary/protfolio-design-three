@@ -89,7 +89,7 @@ header{
     border-radius: 6px;
 }
 .section-one{
-    margin-top: 290px;
+    margin-top: 400px;
 }
 .section-one h1{
     text-align: center;
@@ -103,18 +103,20 @@ header{
 .section-one-div-box{
     margin-top: 50px;
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
 }
 .content{
     height: 310px;
     width: 300px;
     margin: 5px;
-    border-radius: 8px 8px 0 0;
+    border-radius: 8px;
     overflow: hidden;
-    box-shadow: ;
-    border: 1px solid red;
 }
 .content img {
     height: 308px;
     width: 100%;
+}
+.section-two{
+    margin-top: 100px;
 }
