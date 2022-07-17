@@ -4,21 +4,22 @@
     --clr-common: #fdfdfd;
     --clr-box-shadow: #00fff0;
     --clr-font: #000000;
-    --clr-nav-bar: #5693c9;
-    --clr-footer: #000000;
+    --clr-nav-bar: #244b82;
+    --clr-footer: #232123;
     --clr-div: #43dde6;
 }
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    /* overflow: hidden; */
 }
 html{
     scroll-behavior: smooth;
 }
 body{
     font-family: 'Gentium Book Plus', serif;
-    background: var(--clr-common);
+    background: var(--clr-background);
 }
 nav{
     position: fixed;
@@ -40,6 +41,7 @@ nav .container{
 nav .container a{
     list-style: none;
 }
+
 .container li{
     list-style: none;
     display: inline-block;
@@ -56,11 +58,18 @@ nav .container a{
 }
 nav>img{
     width: 50px;
-    margin-left: 30px;
+    margin-left: 40px;
+}
+.logo{
+    font-size: 2em;
+    text-decoration: none;
+    margin-left: -420px;
+    color: #de007b;
 }
 header{
     background-image: url(images/cover-photo-three.webp);
     height: 80vh;
+    width: 100%;
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -73,9 +82,9 @@ header{
     left: 25%;
     color: var(--clr-font);
 }
-.div-parent-one h1{
+.div-parent-one h3{
     font-size: 3em;
-    font-weight: bold;
+    font-weight: normal;
 }
 .div-parent-one p{
     font-size: 2em;
@@ -88,8 +97,9 @@ header{
     font-weight: bold;
     border-radius: 6px;
 }
+
 .section-one{
-    margin-top: 400px;
+    margin-top: 300px;
 }
 .section-one h1{
     text-align: center;
@@ -101,10 +111,17 @@ header{
     margin-right: 398px;
 }
 .section-one-div-box{
-    margin-top: 50px;
+    margin-top: 20px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+}
+span{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 70px;
+    font-size: 1.3em;
 }
 .content{
     height: 310px;
@@ -118,27 +135,122 @@ header{
     width: 100%;
 }
 .section-two{
-    margin-top: 100px;
-    height: 60vh;
+    height: 80vh;
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 5px solid red;
+    background-image: url(images/adventure-cover-03.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#hedline{
+    position: absolute;
+    margin-top: -280px;
+    color: #fff;
+    font-size: 1.8em;
 }
 .section-two-div-one{
     height: 150px;
     width: 85%;
     display: flex;
-    gap: 25px;
-    padding: 15px 0 0 50px;
+    padding: 9px 0 0 50px;
     border-radius: 6px;
-    background: rgb(37, 42, 47);
+    background: rgb(37, 42, 47,0.8);
     color: #fff;
-    border: 5px solid red;
+}
+.section-two-chaild-one{
+    height: 40px;
+    display: flex;
+    gap: 25px;
+}
+.section-two-div-one a{
+    text-decoration: none;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 40px;
+    border: 1px solid transparent;
+    padding: 7px 10px;
+}
+.section-two-div-one a:hover{
+    background: #ff304f;
 }
 .section-two-div-two{
     position: absolute;
     left: 12%;
-    /* top: 10%; */
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+    width: 75%;
+}
+.section-two-div-two input, button{
+    height: 50px;
+    width: 50%;
+    border: none;
+}
+.section-three{
+    margin-top: 70px;
+    text-align: center;
+    line-height: 90px;
+}
+.section-three h1{
+    font-size: 3em;
+}
+.section-three p{
+    font-size: 25px;
+    line-height: 35px;
+}
+
+footer{
+    margin-top: 100px;
+    height: 500px;
+    width: 100%;
+    background: var(--clr-footer);
+}
+.footer-div-patent-one{
+    display: flex;
+    justify-content: space-between;
+    margin-left:  140px;
+    margin-right: 140px;
+    padding: 60px  50px;
+    color: var(--clr-common);
+    align-items: center;
+}
+.footer-div-one{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+    width: 350px;
+    border: 1px solid red;
+}
+.footer-div-one input{
+    height: 40px;
+    width: 350px;
+}
+.line-end{
+    border: 1px solid #fff;
+    margin-left:  140px;
+    margin-right: 140px;
+}
+.footer-child-div-one, .footer-div-patent-one p, a{
+    color: var(--clr-common);
+}
+.footer-div-child-one{
+    display: flex;
+    justify-content: space-between;
+    padding: 60px  50px;
+    margin-left:  140px;
+    margin-right: 140px;
+}
+.footer-child-div-two{
+    display: flex;
+    gap: 20px;
+    margin-top: 90px;
 }
